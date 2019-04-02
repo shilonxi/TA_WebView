@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/web_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.webview.WebView_Activity">
+    <!--垂直线性布局-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入网址："
+        android:textSize="24sp"
+        android:textColor="#e10a0a" />
+    <!--提示信息-->
+
+    <EditText
+        android:id="@+id/wangzhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="注意网址的准确性！"
+        android:textSize="20sp"
+        android:textColor="#1908d1" />
+    <!--键入部分-->
+
+    <Button
+        android:id="@+id/decide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e10a0a"
+        android:text="确认"
+        android:textSize="18sp"
+        android:textColor="#1908d1" />
+    <!--确认按钮-->
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </WebView>
+    <!--嵌入浏览器-->
+
+</LinearLayout>
